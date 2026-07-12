@@ -282,3 +282,9 @@ footer .contato-mail{font-size:.92rem;color:rgba(250,247,239,.7)}
 footer .contato-mail a{color:var(--lima-suave);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(198,219,110,.5)}
 footer .contato a:hover{border-color:var(--lima-suave)}
 footer .fim{font-size:.82rem;color:rgba(250,247,239,.55)}
+
+/* ---------- Barra de progresso de leitura ---------- */
+#progresso{
+  position:fixed;top:0;left:0;height:4px;width:0;z-index:60;
+  background:var(--lima);border-radius:0 3px 3px 0;
+}
