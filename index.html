@@ -3,297 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CollabQuest: O Jogo da Apreciação</title>
-<meta name="description" content="Um baralho de 54 cartas para honrar a jornada que você viveu. Profundo como um ritual, leve como um jogo. Conheça o CollabQuest e leia o guia completo.">
+<title>Como jogar · CollabQuest: O Jogo da Apreciação</title>
+<meta name="description" content="O guia oficial do CollabQuest: preparação, como jogar, dicas, variações e roteiro de centramento. Um baralho de 54 cartas para honrar a jornada que você viveu.">
 <link rel="canonical" href="https://collabquest.com.br/">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="256x256" href="favicon-base.png">
-<meta property="og:title" content="CollabQuest: O Jogo da Apreciação">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="256x256" href="/favicon-base.png">
+<meta property="og:title" content="CollabQuest: O Jogo da Apreciação · Como jogar">
 <meta property="og:description" content="Um baralho de 54 cartas para honrar a jornada que você viveu. Profundo como um ritual, leve como um jogo.">
 <meta property="og:url" content="https://collabquest.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:image" content="https://collabquest.com.br/mockup-caixa.jpg">
-<meta property="og:image:width" content="900">
-<meta property="og:image:height" content="600">
+<meta property="og:image" content="https://collabquest.com.br/caixa-mockup.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="900">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CollabQuest: O Jogo da Apreciação">
+<meta name="twitter:title" content="CollabQuest: O Jogo da Apreciação · Como jogar">
 <meta name="twitter:description" content="Um baralho de 54 cartas para honrar a jornada que você viveu.">
-<meta name="twitter:image" content="https://collabquest.com.br/mockup-caixa.jpg">
+<meta name="twitter:image" content="https://collabquest.com.br/caixa-mockup.jpg">
 <meta name="theme-color" content="#2E7A63">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Albert+Sans:wght@400;500;600&family=Archivo:wght@600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --verde-mata:#2E7A63;
-  --verde-noite:#22513F;
-  --lima:#A9C938;
-  --lima-suave:#C6DB6E;
-  --creme:#FAF7EF;
-  --papel:#FFFFFF;
-  --tinta:#33413C;
-  --tinta-suave:#5C6B64;
-  --vermelho:#D9394C;
-  --laranja:#EE7F2D;
-  --vinho:#6E2230;
-  --max:1060px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .mandala{animation:girar 90s linear infinite!important}
-}
-body{
-  font-family:'Albert Sans',system-ui,sans-serif;
-  color:var(--tinta);
-  background:var(--creme);
-  line-height:1.65;
-  font-size:1.0625rem;
-}
-::selection{background:var(--lima);color:var(--verde-noite)}
-a{color:inherit}
-img{max-width:100%;display:block}
-
-/* ---------- Utilidades ---------- */
-.wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
-.eyebrow{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:.75rem;
-  letter-spacing:.28em;text-transform:uppercase;color:var(--verde-mata);
-  display:flex;align-items:center;gap:.75rem;
-}
-.eyebrow::before{content:"";width:2.2rem;height:2px;background:var(--lima);border-radius:2px;flex:none}
-h2{
-  font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.8rem,3.6vw,2.6rem);
-  line-height:1.15;color:var(--verde-noite);margin:.55rem 0 1.2rem;
-}
-.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);max-width:42em}
-section{padding:5rem 0}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.reveal.on{opacity:1;transform:none}
-
-/* ---------- Nav ---------- */
-nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(250,247,239,.92);backdrop-filter:blur(8px);
-  border-bottom:1px solid rgba(46,122,99,.15);
-}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:3.6rem}
-.brand{
-  font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--verde-noite);
-  text-decoration:none;display:flex;align-items:center;gap:.55rem;
-}
-.brand svg{width:1.5rem;height:1.5rem}
-.nav-links{display:flex;gap:1.4rem;list-style:none}
-.nav-links a{
-  text-decoration:none;font-size:.9rem;font-weight:500;color:var(--tinta-suave);
-  padding:.3rem 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;
-}
-.nav-links a:hover,.nav-links a:focus-visible{color:var(--verde-mata);border-color:var(--lima)}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--lima);outline-offset:3px;border-radius:4px}
-@media(max-width:760px){.nav-links{display:none}}
-
-/* ---------- Hero ---------- */
-header.hero{
-  background:var(--verde-mata);color:var(--creme);
-  position:relative;overflow:hidden;text-align:center;
-  padding:5.5rem 1.5rem 8.5rem;
-}
-.hero .arabesco{position:absolute;inset:0;opacity:.5;pointer-events:none}
-.hero-inner{position:relative;max-width:44rem;margin:0 auto}
-.mandala{width:clamp(150px,22vw,210px);height:auto;margin:0 auto 2.2rem;filter:drop-shadow(0 10px 30px rgba(0,0,0,.28));animation:girar 90s linear infinite}
-@keyframes girar{to{transform:rotate(360deg)}}
-.hero .sub{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:.8rem;
-  letter-spacing:.34em;text-transform:uppercase;color:var(--lima-suave);margin-bottom:.9rem;
-}
-h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2.6rem,6.5vw,4.2rem);line-height:1.05}
-.hero .tagline{
-  font-size:clamp(1.1rem,2vw,1.35rem);margin:1.4rem auto 2.4rem;max-width:34em;
-  color:#EAF2E3;font-weight:400;
-}
-.hero .tagline em{display:block;margin-top:.35em;font-family:'Fraunces',serif;font-style:italic;color:var(--lima-suave)}
-.ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:.85rem;
-  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
-  padding:.95rem 1.9rem;border-radius:999px;transition:transform .2s,box-shadow .2s;
-  display:inline-block;
-}
-.btn:hover{transform:translateY(-2px)}
-.btn-lima{background:var(--lima);color:var(--verde-noite);box-shadow:0 6px 20px rgba(0,0,0,.22)}
-.btn-ghost{border:2px solid rgba(250,247,239,.55);color:var(--creme)}
-.btn-ghost:hover{border-color:var(--lima-suave);color:var(--lima-suave)}
-
-/* onda divisória */
-.onda{display:block;width:100%;height:70px;margin-top:-1px}
-.onda.baixo{transform:scaleY(-1)}
-
-/* ---------- Trilha de pontos ---------- */
-.trilha{display:flex;justify-content:center;padding:0 0 .5rem}
-.trilha svg{width:150px;height:auto;opacity:.85}
-
-/* ---------- O Jogo ---------- */
-#o-jogo .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
-@media(max-width:820px){#o-jogo .grid{grid-template-columns:1fr}}
-
-/* ---------- Não é ---------- */
-.nao-e{background:var(--papel)}
-.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:1.6rem}
-@media(max-width:820px){.tres{grid-template-columns:1fr}}
-.tile{
-  background:var(--creme);border-radius:14px;padding:1.8rem 1.6rem;
-  border:1px solid rgba(46,122,99,.14);
-}
-.tile h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.25rem;color:var(--verde-noite);margin-bottom:.5rem}
-.tile p{font-size:.98rem;color:var(--tinta-suave)}
-
-/* ---------- Preparação ---------- */
-.passos{list-style:none;margin-top:2rem;display:grid;gap:0;position:relative}
-.passo{
-  display:grid;grid-template-columns:3.4rem 1fr;gap:1.3rem;padding:1.4rem 0;position:relative;
-}
-.passo:not(:last-child)::after{
-  content:"";position:absolute;left:1.65rem;top:4.6rem;bottom:-.4rem;width:0;
-  border-left:2px dotted rgba(46,122,99,.45);
-}
-.marcador{
-  width:3.4rem;height:3.4rem;border-radius:50%;flex:none;
-  background:var(--verde-mata);color:var(--creme);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;
-  box-shadow:0 0 0 5px var(--creme),0 0 0 7px rgba(169,201,56,.7);
-}
-.passo h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;color:var(--verde-noite);margin-bottom:.3rem}
-.acordos{list-style:none;margin-top:.7rem;display:grid;gap:.45rem}
-.acordos li{display:flex;gap:.6rem;align-items:baseline;font-size:1rem}
-.acordos li::before{content:"✦";color:var(--lima);flex:none;font-size:.8rem}
-
-/* ---------- Como jogar ---------- */
-.jogar{background:var(--verde-mata);color:var(--creme);position:relative;overflow:hidden}
-.jogar .arabesco{position:absolute;inset:0;opacity:.35;pointer-events:none}
-.jogar .wrap{position:relative}
-.jogar .eyebrow{color:var(--lima-suave)}
-.jogar .eyebrow::before{background:var(--lima)}
-.jogar h2{color:var(--creme)}
-.coracao{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin:2rem 0 3rem;
-  counter-reset:passo;
-}
-@media(max-width:820px){.coracao{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.coracao{grid-template-columns:1fr}}
-.coracao div{
-  background:rgba(255,255,255,.08);border:1px solid rgba(250,247,239,.18);
-  border-radius:14px;padding:1.5rem 1.3rem;counter-increment:passo;
-}
-.coracao div::before{
-  content:counter(passo);display:block;font-family:'Fraunces',serif;font-weight:700;
-  font-size:1.9rem;color:var(--lima-suave);margin-bottom:.4rem;
-}
-.coracao p{font-size:.97rem;color:#EAF2E3}
-.formatos{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-@media(max-width:820px){.formatos{grid-template-columns:1fr}}
-.formato{border-left:3px solid var(--lima);padding:.2rem 0 .2rem 1.1rem}
-.formato h3{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--lima-suave);margin-bottom:.35rem;
-}
-.formato p{font-size:.97rem;color:#EAF2E3}
-.jogar .fecho{
-  margin-top:3rem;padding-top:2.2rem;border-top:1px dotted rgba(250,247,239,.35);
-  font-size:1.05rem;max-width:44em;color:#EAF2E3;
-}
-.jogar .fecho strong{color:var(--lima-suave);font-weight:600}
-
-/* ---------- Dicas ---------- */
-.dicas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem;margin-top:1.8rem}
-@media(max-width:760px){.dicas-grid{grid-template-columns:1fr}}
-.dica{
-  background:var(--papel);border-radius:14px;padding:1.5rem 1.5rem 1.4rem;
-  border:1px solid rgba(46,122,99,.13);box-shadow:0 6px 20px rgba(46,122,99,.06);
-}
-.dica h3{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--verde-mata);margin-bottom:.4rem;
-}
-.dica p{font-size:.97rem;color:var(--tinta-suave)}
-.dica em{color:var(--tinta);font-style:italic}
-
-/* ---------- Variações ---------- */
-.variacoes{background:var(--papel)}
-.var-lista{display:grid;gap:2rem;margin-top:1.8rem}
-.var-item{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:start;max-width:52em}
-.var-item .folha{width:2rem;height:2rem;flex:none;margin-top:.3rem}
-.var-item h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;color:var(--verde-noite);margin-bottom:.3rem}
-.var-item p{color:var(--tinta-suave)}
-
-/* ---------- Centramento ---------- */
-.centramento{background:var(--verde-noite);color:var(--creme);position:relative;overflow:hidden}
-.centramento .arabesco{position:absolute;inset:0;opacity:.28;pointer-events:none}
-.centramento .wrap{position:relative;max-width:46rem}
-.centramento .eyebrow{color:var(--lima-suave)}
-.centramento h2{color:var(--creme)}
-.centramento details{
-  margin-top:1.6rem;background:rgba(255,255,255,.06);
-  border:1px solid rgba(250,247,239,.2);border-radius:14px;
-}
-.centramento summary{
-  cursor:pointer;list-style:none;padding:1.3rem 1.6rem;
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:.85rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--lima-suave);
-  display:flex;justify-content:space-between;align-items:center;gap:1rem;
-}
-.centramento summary::-webkit-details-marker{display:none}
-.centramento summary::after{content:"+";font-size:1.4rem;font-family:'Fraunces',serif;transition:transform .25s}
-.centramento details[open] summary::after{transform:rotate(45deg)}
-.roteiro{padding:0 1.6rem 1.8rem;display:grid;gap:1.1rem}
-.roteiro p{
-  font-family:'Fraunces',serif;font-size:1.12rem;line-height:1.7;color:#EAF2E3;
-  border-left:2px solid var(--lima);padding-left:1.1rem;
-}
-
-/* ---------- Baralho / mockup ---------- */
-#baralho .grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-@media(max-width:820px){#baralho .grid{grid-template-columns:1fr}}
-.mockup-real{
-  border-radius:18px;box-shadow:0 24px 60px rgba(34,81,63,.25);
-  border:1px solid rgba(46,122,99,.1);
-}
-.leque-cartas{border-radius:18px;box-shadow:0 20px 50px rgba(34,81,63,.16);width:100%}
-
-/* ---------- Rodapé ---------- */
-footer{background:var(--verde-noite);color:var(--creme);text-align:center;padding:4.5rem 1.5rem 3rem}
-footer .despedida{
-  font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.25rem,2.6vw,1.7rem);
-  max-width:30em;margin:0 auto 2.4rem;color:#EAF2E3;
-}
-footer .despedida span{color:var(--lima-suave)}
-footer .contato{margin-bottom:2.6rem}
-footer .contato-txt{font-size:1.05rem;color:#EAF2E3;margin-bottom:1.4rem}
-footer .contato .ctas{margin-bottom:1.4rem}
-footer .contato-mail{font-size:.92rem;color:rgba(250,247,239,.7)}
-footer .contato-mail a{color:var(--lima-suave);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(198,219,110,.5)}
-footer .contato a:hover{border-color:var(--lima-suave)}
-footer .fim{font-size:.82rem;color:rgba(250,247,239,.55)}
-</style>
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <nav aria-label="Navegação principal">
   <div class="wrap">
-    <a class="brand" href="#topo">
-      <img src="mandala.png" alt="" width="24" height="24" style="border-radius:50%">
-      CollabQuest
+    <a class="brand" href="/">
+      <img src="/mandala.png" alt="" width="24" height="24" style="border-radius:50%">
+      <span>CollabQuest</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#o-jogo">O Jogo</a></li>
-      <li><a href="#preparacao">Preparação</a></li>
-      <li><a href="#como-jogar">Como Jogar</a></li>
-      <li><a href="#dicas">Dicas</a></li>
-      <li><a href="#variacoes">Variações</a></li>
-      <li><a href="#baralho">O Baralho</a></li>
+      <li><a href="/" class="ativo" aria-current="page">Como jogar</a></li>
+      <li><a class="btn-nav" href="/comprar/">Quero o jogo</a></li>
     </ul>
   </div>
 </nav>
@@ -316,13 +59,14 @@ footer .fim{font-size:.82rem;color:rgba(250,247,239,.55)}
     </g>
   </svg>
   <div class="hero-inner">
-    <img class="mandala" src="mandala.png" alt="Mandala colorida do CollabQuest" width="210" height="210" fetchpriority="high">
+    <img class="mandala" src="/mandala.png" alt="Mandala colorida do CollabQuest" width="190" height="189" fetchpriority="high">
     <p class="sub">O Jogo da Apreciação</p>
     <h1>CollabQuest</h1>
     <p class="tagline">Um baralho de 54 cartas para honrar a jornada que você viveu. <em>Profundo como um ritual, leve como um jogo.</em></p>
+    <p class="aviso-guia">Este é o <strong>guia oficial do jogo</strong>. Leia até o fim antes da primeira partida: a preparação é parte da magia.</p>
     <div class="ctas">
-      <a class="btn btn-lima" href="#o-jogo">Conhecer o jogo</a>
-      <a class="btn btn-ghost" href="#quero" >Quero o jogo</a>
+      <a class="btn btn-lima" href="#o-jogo">Começar a leitura</a>
+      <a class="btn btn-ghost" href="/comprar/">Ainda não tenho o jogo</a>
     </div>
   </div>
 </header>
@@ -338,7 +82,7 @@ footer .fim{font-size:.82rem;color:rgba(250,247,239,.55)}
         <p class="lead" style="margin-top:1rem">O CollabQuest transforma essa apreciação em jogo. A cada carta, um convite: relembrar, sentir, expressar, agradecer. Pelas cores, emoções e cenários que despertam, as cartas conduzem a um estado de presença que abre novas percepções sobre o caminho percorrido.</p>
       </div>
       <div class="reveal">
-        <img class="leque-cartas" src="cartas-leque.jpg" alt="Verso do baralho CollabQuest e um leque de cartas mostrando os selos de categoria: Processos, Fatos, Negativo, Criatividade, Positivo e Emoções" loading="lazy" width="1100" height="682">
+        <img class="img-produto" src="/cartas-leque.jpg" alt="Verso do baralho CollabQuest e um leque de cartas mostrando os selos de categoria: Processos, Fatos, Negativo, Criatividade, Positivo e Emoções" loading="lazy" width="1100" height="682">
       </div>
     </div>
   </div>
@@ -510,34 +254,24 @@ footer .fim{font-size:.82rem;color:rgba(250,247,239,.55)}
   </div>
 </section>
 
-<section id="baralho">
+<section class="sobre" id="baralho">
   <div class="wrap">
-    <div class="grid">
-      <div class="reveal">
-        <p class="eyebrow">O Baralho</p>
-        <h2>54 cartas, um selo para cada categoria</h2>
-        <p class="lead">O CollabQuest é um mix de tecnologias sociais. Na criação das cartas, nos inspiramos em abordagens como a Teoria U e os Seis Chapéus do Pensamento, entre outras fontes que estudamos e vivenciamos. Cada carta carrega o selo de sua categoria.</p>
-        <p class="lead" style="margin-top:1rem">O jogo nasceu como produção do curso Introdutório de Design Colaborativo de Projetos e foi lapidado em dezenas de partidas reais, cujos aprendizados vivem neste guia.</p>
-        <p class="lead" style="margin-top:.75rem">Criado por Éddy Augusto, Gabriela Starke, Julia Fagundes e Liliana Loureiro.</p>
-      </div>
-      <div class="reveal">
-        <img class="mockup-real" src="mockup-caixa.jpg" alt="Caixa do CollabQuest, verde-limão com a mandala colorida no topo" loading="lazy" width="900" height="600">
-      </div>
-    </div>
+    <p class="eyebrow reveal">O Baralho</p>
+    <h2 class="reveal">54 cartas, um selo para cada categoria</h2>
+    <p class="lead reveal">O CollabQuest é um mix de tecnologias sociais. Na criação das cartas, nos inspiramos em abordagens como a Teoria U e os Seis Chapéus do Pensamento, entre outras fontes que estudamos e vivenciamos. Cada carta carrega o selo de sua categoria.</p>
+    <p class="lead reveal" style="margin-top:1rem">O jogo nasceu como produção do curso Introdutório de Design Colaborativo de Projetos e foi lapidado em dezenas de partidas reais, cujos aprendizados vivem neste guia.</p>
+    <p class="creditos reveal">Criado por Éddy Augusto, Gabriela Starke, Julia Fagundes e Liliana Loureiro.</p>
   </div>
 </section>
 
 <footer id="contato">
   <p class="despedida">Agradeça e honre a sua jornada,<br><span>e siga em frente. ✦</span></p>
-  <div class="contato" id="quero">
-    <p class="contato-txt">Quer um baralho, ou levar o jogo para o seu grupo?</p>
+  <div class="contato">
+    <p class="contato-txt">Quer um baralho para chamar de seu, ou levar o jogo para o seu grupo?</p>
     <div class="ctas">
-      <!-- TROCAR href pelo link do form "Quero o jogo" do Notion -->
-      <a class="btn btn-lima" href="https://namesmapagina.notion.site/ebd//9c552eb66ca7495d960dfb83637842a4" target="_blank" rel="noopener">Quero o jogo</a>
-      <!-- TROCAR href pelo link do form "Preciso de ajuda" do Notion -->
-      <a class="btn btn-ghost" href="https://namesmapagina.notion.site/ebd//f9532771e380442aba42dc6016d8706b" target="_blank" rel="noopener">Preciso de ajuda</a>
+      <a class="btn btn-lima" href="/comprar/">Quero o jogo</a>
     </div>
-    <p class="contato-mail">Ou escreva para <a href="mailto:contato@collabquest.com.br">contato@collabquest.com.br</a></p>
+    <p class="contato-mail">Dúvidas? Escreva para <a href="mailto:contato@collabquest.com.br">contato@collabquest.com.br</a></p>
   </div>
   <p class="fim">CollabQuest: O Jogo da Apreciação · collabquest.com.br</p>
 </footer>
