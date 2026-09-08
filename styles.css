@@ -258,12 +258,16 @@ h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2.6rem,6.5vw,4.2
 .comprar-hero .ctas{justify-content:flex-start;margin-top:2rem}
 .comprar-hero .nota{margin-top:1.4rem;font-size:.95rem;color:var(--tinta-suave)}
 .comprar-hero .nota a{color:var(--verde-mata);font-weight:600}
-.selo-tiragem{
-  display:inline-block;font-family:'Archivo',sans-serif;font-weight:700;font-size:.72rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--vinho);
-  background:rgba(238,127,45,.14);border:1px solid rgba(238,127,45,.35);
-  padding:.4rem .9rem;border-radius:999px;margin-bottom:1.1rem;
+.form-embed{
+  margin-top:2.4rem;border-radius:18px;overflow:hidden;scroll-margin-top:4.8rem;
+  border:2px solid var(--lima);box-shadow:0 24px 60px rgba(34,81,63,.28);background:#fff;
 }
+.form-embed-titulo{
+  margin:0;padding:1rem 1.4rem;font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--verde-noite);background:var(--lima-suave);
+}
+.form-embed iframe{display:block;width:100%;border:0;height:80vh;min-height:680px}
 .baralho-foto{background:var(--papel)}
 .baralho-foto .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
 @media(max-width:820px){.baralho-foto .grid{grid-template-columns:1fr}}
